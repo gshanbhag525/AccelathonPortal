@@ -85,9 +85,37 @@
                         </span>
                     </div>
 
+                    <div class="wrap-input100 ">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-building" aria-hidden="true"></i>
+                        </span>
+                        <select class="input-inst-id" name="ins_id">
+                            <!-- @foreach($institute as $i) -->
+                            <option value="{{$i->id}}">{{$i->name}}</option>
+                            <!-- @endforeach -->
+                        </select>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Photo is required">
+                        <input class="inputpic" type="file" name="photo" placeholder="Select Profile Picture">
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-user-circle" aria-hidden="true"></i>
+                        </span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input">
+                        <textarea class="input200" cols="10" rows="10" name="profile"></textarea>
+                        <span class="focus-input100"></span>
+                        <span class="symbol-input100">
+                            <i class="fa fa-info" aria-hidden="true"></i>
+                        </span>
+                    </div>
+
                     <div class="container-login100-form-btn">
                         <button class="login100-form-btn">
-                            Register
+                            Save
                         </button>
                     </div>
 
